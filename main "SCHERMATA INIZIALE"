@@ -1,0 +1,24 @@
+init = function()
+  
+  mode = "title"
+  
+end
+
+update = function()
+
+end
+  
+  if mode == "title" then
+    updateTitleScreen()
+  elsif mode == "play" then
+    
+end
+
+draw = function()
+  
+  if mode == "title" then
+    drawTitleScreen()
+  elsif mode == "play" then
+    drawGame()
+  end
+end
