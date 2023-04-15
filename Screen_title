@@ -1,0 +1,16 @@
+updateTitleScreen = function()
+  if keyboard.SPACE then
+    mode = "play"
+  end
+end
+
+drawTitleScreen = function()
+  
+  screen.drawSprite("sfondo",0,0,356,200)
+  screen.setFont("AlphaBeta")
+  screen.drawText("A Wizard's challenge",0,0,-40,"rgb(74,12,105)")
+  
+  screen.setAlpha(getFlashValue())
+  screen.drawText("press space",0,-20,20, "#FFF")
+  screen.setAlpha(0)
+end
